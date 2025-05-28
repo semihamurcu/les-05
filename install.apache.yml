@@ -1,0 +1,12 @@
+---
+- name: Install Apache2 without apt module
+  hosts: all
+  become: true
+  tasks:
+    - name: Install apache2 via command
+      command: apt-get install -y apache2
+      register: apache_result
+      changed_when: "'is already the newest version' not in apache_result.stdout"
+
+    - name: Fail task (simulate error)
+      command: /bin/false

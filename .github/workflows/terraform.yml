@@ -30,3 +30,9 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+
+      - name: Terraform Output
+        run: |
+          terraform output -json > tf_output.json
+          echo "VM Naam: $(jq -r .vm_name.value tf_output.json)" > output.txt
+          echo "IP Adres: $(jq -r .vm_ip.value tf_output.json)" >> output.txt

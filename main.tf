@@ -18,10 +18,3 @@ output "vm_ip" {
   value = esxi_guest.simpelevm.network_interfaces[0].ipv4_address
 }
 
-output "vm_name" {
-  value = esxi_guest.simpelevm.guest_name
-}
-
-output "vm_ip" {
-  value = esxi_guest.simpelevm.network_interfaces[0].ipv4_address
-}

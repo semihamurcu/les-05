@@ -1,5 +1,8 @@
 # Les 05 - CI/CD met Ansible, GitHub Actions & Terraform
 
+## Bron
+https://chatgpt.com/share/6837f6d0-baf0-8002-9f35-0f3c39f8d61e
+
 ## Inhoud
 
 Deze repository bevat de uitwerking van drie opdrachten rondom Ansible, GitHub Actions, en Terraform. Je leert hoe je CI/CD-pipelines opzet met een lokale GitHub Runner, Ansible gebruikt zonder de `apt` module, en Terraform inzet voor VM-deployments via ESXi.
